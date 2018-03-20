@@ -13,7 +13,7 @@
   <tr>
     {{#each fields as |field|}}
       {{#if field.component}}
-        {{component field.component field.name}}
+        <td>{{component field.component value=(get element field.name)}}</td>
       {{else}}
         <td>{{get element field.name}}</td>
       {{/if}}
